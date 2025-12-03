@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.cse213_finalproject_groupno77_texttilefactory.EmployeeManager.addNewEmployeeController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <VBox spacing="15" alignment="CENTER" layoutX="150" layoutY="40">
+
+            <Label text="Add New Material"
+                   style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+            <HBox spacing="10">
+                <Label text="Material Name:" style="-fx-font-size: 14px;"/>
+                <TextField fx:id="materialNameField"
+                           promptText="Enter name"
+                           prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="23">
+                <Label text="Quantity:" style="-fx-font-size: 14px;"/>
+                <TextField fx:id="quantityField"
+                           promptText="Enter quantity"
+                           prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="43">
+                <Label text="Price:" style="-fx-font-size: 14px;"/>
+                <TextField fx:id="priceField"
+                           promptText="Enter price"
+                           prefWidth="200"/>
+            </HBox>
+
+            <Button text="Add Material"
+                    onAction="#handleAddMaterial"
+                    prefWidth="180"
+                    style="-fx-font-size: 15px; -fx-background-color: #2196F3; -fx-text-fill: white;" />
+
+            <Label fx:id="statusLabel"
+                   text=""
+                   style="-fx-text-fill: green; -fx-font-size: 14px;" />
+
+        </VBox>
+    </children>
+
+</AnchorPane>
